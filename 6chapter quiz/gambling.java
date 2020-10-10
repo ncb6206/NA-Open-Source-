@@ -15,11 +15,10 @@ public class gambling {
 		Person person1 = new Person();
 		Person person2 = new Person();
 		
-		System.out.print("1¹øÂ° ¼±¼ö ÀÌ¸§>>");
-		person1.name=scanner.next();
-		System.out.print("2¹øÂ° ¼±¼ö ÀÌ¸§>>");
-		person2.name=scanner.next();
-		scanner.nextLine();
+		System.out.print("1ë²ˆì§¸ ì„ ìˆ˜ ì´ë¦„>>");
+		person1.name=scanner.nextLine();
+		System.out.print("2ë²ˆì§¸ ì„ ìˆ˜ ì´ë¦„>>");
+		person2.name=scanner.nextLine();
 		
 		while(true) {
 			System.out.print("["+person1.name+"]:<Enter>");
@@ -32,11 +31,11 @@ public class gambling {
 			System.out.print(c+"   ");
 			
 			if(a==b&&b==c) {
-				System.out.println(person1.name+"´ÔÀÌ ÀÌ°å½À´Ï´Ù!");
+				System.out.println(person1.name+"ë‹˜ì´ ì´ê²¼ìŠµë‹ˆë‹¤!");
 				break;
 			}
 			else
-				System.out.println("¾Æ½±±º¿ä!");
+				System.out.println("ì•„ì‰½êµ°ìš”!");
 			
 			System.out.print("["+person2.name+"]:<Enter>");
 			scanner.nextLine();
@@ -48,11 +47,11 @@ public class gambling {
 			System.out.print(c+"   ");
 			
 			if(a==b&&b==c) {
-				System.out.println(person2.name+"´ÔÀÌ ÀÌ°å½À´Ï´Ù!");
+				System.out.println(person2.name+"ë‹˜ì´ ì´ê²¼ìŠµë‹ˆë‹¤!");
 				break;
 			}
 			else
-				System.out.println("¾Æ½±±º¿ä!");
+				System.out.println("ì•„ì‰½êµ°ìš”!");
 		}
 	}
 }
